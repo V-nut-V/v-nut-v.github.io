@@ -1,0 +1,33 @@
+@import "base/mixins"
+
+main
+  .wrapper
+    display: block
+    @include small
+      max-width: 100%
+    .videobox
+      margin-top: 5rem
+      padding-bottom: 3rem
+      border-bottom: #666 dotted 2px
+      h1
+        font-size: 4rem
+        font-weight: 700
+        letter-spacing: 2px
+        color: #eee
+        line-height: 4rem
+        text-align: center
+        @include small
+          font-size: 2rem
+          line-height: 2.2rem
+          margin: 0 6px
+      .videobk
+        width: 100%
+        display: flex
+        justify-content: center
+        iframe
+          width: 800px
+          height: 450px
+          margin-top: 2rem
+          @include small
+            width: 600px
+            height: 300px

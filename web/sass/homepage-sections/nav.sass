@@ -1,0 +1,157 @@
+nav
+  background: $gray3
+  position: fixed
+  width: 100vw
+  z-index: 10
+  .nav
+    width: 1000px
+    max-width: 90%
+    margin: 0 auto
+    text-align: center
+    display: flex
+    justify-content: space-between
+
+    img
+      width: 50px
+      height: 40px
+      transform-origin: top left
+      animation: breath 4s ease-in-out infinite
+
+    >ul
+      display: flex
+      background: $gray3
+
+      >li>a
+        cursor: default
+
+      >li:last-child a
+        cursor: pointer
+
+      >li>ul li
+          background-color: $gray3
+          display: none
+
+          &:last-child
+            border-radius: 0 0 8px 8px
+
+          &:hover
+            background-color: $menuGray
+
+            a
+              color: $gray1
+
+      li:hover
+        background: $menuGray
+        display: block
+        z-index: 3
+
+        &>a
+          color: $gray1
+
+      >li:hover ul li
+        opacity: 0
+        display: block
+        perspective: 200px
+        transform-origin: top left
+        @for $i from 1 through 7
+          &:nth-child(#{$i})
+            animation:
+              name: menu1
+              duration: 220ms
+              delay: ($i - 1) * 110ms
+              timing-function: ease-out
+              fill-mode: forwards
+
+  a
+    text-decoration: none
+    color: $gray5
+    font-weight: 100
+    font-size: 1.4rem
+    line-height: 40px
+
+  li
+    width: 120px
+    height: 40px
+/* pad size */
+@include small
+  nav .nav
+    max-width: 100%
+
+    img
+      margin-left: 15px
+
+    >ul
+      display: none
+
+    .burgerMenu
+      padding: 8px 0
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      width: 40px
+      height: 40px
+      background: $menuGray
+      cursor: pointer
+
+      div
+        width: 27px
+        height: 5px
+        background: $gray1
+        transition: all .3s ease-out
+        box-shadow: 3px 3px 2px rgba(0,0,0,.3)
+
+    .X-sign
+      .menuTop
+        transform: translateY(8px) rotate(45deg)
+
+      .menuMid
+        transform: scaleX(0)
+
+      .menuBot
+        transform: translateY(-8px) rotate(-45deg)
+.phoneMenu
+  opacity: 0
+  display: none
+  text-align: center
+  li
+    opacity: 0
+    height: 4rem
+    background: $menuGray
+    border-top: $gray4 solid 1px
+    transform-origin: top center
+    @for $i from 1 to 12
+      &:nth-child(#{$i})
+        animation:
+          name: menu2
+          duration: 300ms
+          delay: ($i - 1) * 30ms
+          timing-funciton: ease-in
+          fill-mode: forwards
+    &:last-child
+      border-bottom: $gray4 solid 1px
+
+
+    a
+      text-decoration: none
+      font-size: 2.5rem
+      line-height: 4rem
+      color: $gray1
+      font-family: sans-serif
+      font-weight: 100
+      letter-spacing: 1px
+      text-shadow: 2px 2px 1px rgba(0,0,0,.5)
+      cursor: pointer
+
+  li:hover
+    background: $gray4
+    a
+      color: #fff
+
+  &.menuList
+    top: 40px
+    display: block
+    position: fixed
+    width: 100%
+    opacity: 1
+    z-index: 2

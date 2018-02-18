@@ -1,0 +1,37 @@
+body {
+  background-color: #222;
+}
+
+div {
+  width: 250px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+img {
+  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.8));
+}
+
+audio {
+  width: 250px;
+  margin-top: 20px;
+}
+
+p {
+  color: #fff;
+  font-size: 1.6em;
+  width: 100%;
+  margin: 4% 0 0 0;
+  padding-left: 6px;
+}
+
+p span.bold {
+  font-weight: bold;
+}
+
+p span.italic {
+  display: inline-block;
+  font-family: cursive;
+  font-style: italic;
+  margin-bottom: 10px;
+}

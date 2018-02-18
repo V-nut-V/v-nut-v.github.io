@@ -1,0 +1,46 @@
+main .wrapper {
+  padding-top: 4rem;
+  display: block; }
+  @media screen and (max-width: 800px) {
+    main .wrapper {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding-top: 2rem;
+      max-width: 100%; } }
+  main .wrapper h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #eee;
+    line-height: 4rem; }
+    @media screen and (max-width: 800px) {
+      main .wrapper h1 {
+        padding-left: 1rem;
+        font-size: 2rem; } }
+  main .wrapper h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #eee;
+    line-height: 2rem;
+    padding-left: 1rem; }
+    @media screen and (max-width: 800px) {
+      main .wrapper h4 {
+        font-size: 1.4rem;
+        padding-left: 2rem; } }
+  main .wrapper img {
+    margin-top: 2rem;
+    width: 100%; }
+
+.detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .detail .wrapper {
+    max-width: 600px;
+    margin-top: 0; }
+    .detail .wrapper header {
+      background-color: #000;
+      border: #777 solid 2px; }

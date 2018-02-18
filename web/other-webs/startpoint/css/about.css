@@ -1,0 +1,61 @@
+.info {
+  max-width: 120rem;
+  width: 90%;
+  min-height: calc(100vh - 40.1rem);
+  margin: 5rem auto 5rem auto;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 1rem;
+  box-shadow: 6px 6px 6px 0px rgba(0,0,0,.7);
+  color: #ccc;
+  padding: 4rem;
+}
+
+.info h1 {
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  /*font-family: 'Fredericka the Great', cursive;*/
+  font-family: 'Lato', sans-serif;
+}
+
+.info h2 {
+  margin-bottom: .5rem;
+}
+
+.info p {
+  margin-bottom: 2rem;
+}
+
+nav {
+  min-height: 81.2rem;
+}
+
+@media screen and (max-width: 660px) {
+  .info h1 {
+    font-size: 4rem;
+  }
+
+  .info h2 {
+    font-size: 2rem;
+  }
+
+  .info p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info h1 {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+  }
+
+  .info h2 {
+    font-size: 1.8rem;
+  }
+
+  .info p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}

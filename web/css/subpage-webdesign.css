@@ -1,0 +1,46 @@
+nav .wrapper h1 {
+  width: 310px; }
+  @media screen and (max-width: 800px) {
+    nav .wrapper h1 {
+      width: 32rem;
+      font-size: 1.8rem; } }
+
+main .wrapper {
+  display: block; }
+  @media screen and (max-width: 800px) {
+    main .wrapper {
+      max-width: 100%; } }
+  main .wrapper .webbox {
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: #666 solid 2px; }
+    main .wrapper .webbox h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #eee;
+      line-height: 4rem; }
+      @media screen and (max-width: 800px) {
+        main .wrapper .webbox h1 {
+          padding-left: 1rem;
+          font-size: 2rem; } }
+    main .wrapper .webbox h2 {
+      color: #eee;
+      font-size: 1.8rem;
+      font-weight: 400;
+      padding-top: .5rem;
+      padding-left: 2rem; }
+      @media screen and (max-width: 800px) {
+        main .wrapper .webbox h2 {
+          font-size: 1.4rem;
+          font-weight: 300;
+          padding-top: .5rem; } }
+      main .wrapper .webbox h2 a {
+        color: #eee;
+        padding-left: .5rem; }
+    main .wrapper .webbox img {
+      margin-top: 2rem;
+      width: 100%; }
+      @media screen and (max-width: 800px) {
+        main .wrapper .webbox img {
+          margin-top: 1rem; } }

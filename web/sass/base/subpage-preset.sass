@@ -1,0 +1,224 @@
+body
+  background: url("../images/subpage/background.jpg")
+  background-size: 50px
+
+/* nav section -------------------------------------------------------------------------- */
+nav
+  background-color: $menuGray
+  position: fixed
+  width: 100vw
+  .wrapper
+    width: 1100px
+    max-width: 95%
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    height: 14rem
+    @include small
+      height: 4rem
+      max-width: 100%
+    h1
+      align-self: center
+      letter-spacing: 1px
+      font-size: 4rem
+      color: #fff
+      font-weight: 400
+      text-transform: uppercase
+      @include small
+        font-size: 2rem
+        margin-left: 1.2rem
+    .navlist
+      align-self: center
+      display: flex
+      @include small
+        display: none
+      ul
+        margin-left: 5rem
+        li a
+          color: $gray6
+          font-size: 1.3rem
+          line-height: 1.9rem
+          letter-spacing: 1px
+          text-decoration: none
+          font-weight: 300
+          &:hover
+            color: #fff
+            text-decoration: underline
+          &.white
+            color: #fff
+            text-decoration: underline
+    .burgerMenu
+      display: none
+      position: fixed
+      right: 0
+      @include small
+        padding: 8px 0
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        width: 40px
+        height: 40px
+        background: #555
+        cursor: pointer
+        div
+          width: 27px
+          height: 5px
+          background: $gray6
+          transition: all .3s ease-out
+          box-shadow: 3px 3px 2px rgba(0,0,0,.3)
+
+    .X-sign
+      .menuTop
+        transform: translateY(8px) rotate(45deg)
+
+      .menuMid
+        transform: scaleX(0)
+
+      .menuBot
+        transform: translateY(-8px) rotate(-45deg)
+
+.phoneMenu
+  opacity: 0
+  display: none
+  text-align: center
+  li
+    opacity: 0
+    height: 4rem
+    background: $menuGray
+    border-top: #555 solid 1px
+    transform-origin: top center
+    @for $i from 1 to 13
+      &:nth-child(#{$i})
+        animation:
+          name: menu2
+          duration: 300ms
+          delay: ($i - 1) * 30ms
+          timing-funciton: ease-in
+          fill-mode: forwards
+    &:last-child
+      border-bottom: #555 solid 1px
+
+
+    a
+      text-decoration: none
+      font-size: 2.5rem
+      line-height: 4rem
+      color: $gray6
+      font-family: sans-serif
+      font-weight: 100
+      letter-spacing: 1px
+      text-shadow: 2px 2px 1px rgba(0,0,0,.5)
+      cursor: pointer
+
+  li:hover
+    background: #555
+    a
+      color: #fff
+
+  &.menuList
+    display: block
+    position: fixed
+    top: 40px
+    width: 100%
+    opacity: 1
+    z-index: 3
+/* content section -------------------------------------------------------------------------- */
+main
+  padding-top: 14rem
+  @include small
+    padding-top: 40px
+  .wrapper
+    width: 1100px
+    max-width: 94%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(auto-fit, 270px)
+    justify-content: center
+    .box
+      border: #fff solid 1px
+      width: 250px
+      margin: 4rem 1rem 1rem 1rem
+      border-radius: 1rem
+      background-color: rgba(0,0,0,.3)
+      h1
+        padding: .5rem
+        font-size: 2.5rem
+        font-weight: 400
+        color: #fff
+        letter-spacing: 2px
+        text-align: center
+      img
+        width: 248px
+        border-top: #fff solid 1px
+        border-bottom: #fff solid 1px
+        &:hover
+          opacity: .9
+          cursor: pointer
+      h3
+        margin: 1rem
+        font-weight: 300
+        color: #fff
+        letter-spacing: 1px
+        font-size: 1.5rem
+/* showing detail */
+.detailTage
+  display: none
+.detail
+  display: block
+  position: absolute
+  top: 0
+  width: 100vw
+  // height: 100vh
+  // background-color: rgba(0,0,0,.8)
+  animation:
+    name: appear
+    duration: 300ms
+    timing-function: ease-in-out
+    fill-mode: forwards
+  .wrapper
+    max-width: 1100px
+    margin: 0 auto
+    padding: 0 2rem
+    margin-top: 10vh
+    // for mobile size
+    @include logoAdjust
+      margin-top: 0
+      padding: 0
+    header
+      display: flex
+      justify-content: space-between
+      background-color: #000
+      h1
+        line-height: 40px
+        letter-spacing: 2px
+        margin-left: 2rem
+        font-size: 2.5rem
+        color: #ddd
+        text-transform: capitalize
+      .closeTage
+        width: 40px
+        height: 40px
+        background-color: #777
+        float: right
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        cursor: pointer
+        &:hover
+          background-color: #222
+        .top
+          transform: translateY(10px) rotate(-45deg)
+        .bottom
+          transform: translateY(-10px) rotate(45deg)
+        div
+          width: 30px
+          height: 5px
+          background-color: #fff
+    picture
+      img
+        width: 100%
+
+sub
+  display: none

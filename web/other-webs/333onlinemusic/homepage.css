@@ -1,0 +1,474 @@
+/* Font family*/
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+/* Get rid of default */
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Global */
+
+body {
+  font-size: 8px;
+  font-family: sans-serif;
+  background: url(images/header_background.png) repeat-x top left;
+}
+
+div.inside_body {
+  background: url(images/background_bottom.jpg) repeat-x bottom left;
+}
+
+div.container {
+  width: 125em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header.mainheader {
+  position: relative;
+  height: 97px;
+  margin-bottom: 60px;
+}
+
+a.logo_link {
+  display: block;
+  float: left;
+  height: 43px;
+  width: 152px;
+  margin: 28px 0 0 4%;
+  background: url(images/logo.png) no-repeat;
+  background-size: 100%;
+}
+
+nav {
+  position: relative;
+  display: block;
+  float: right;
+  margin: 40px 4% 0 0;
+}
+
+a.sign_in,
+nav ul li {
+  float: left;
+  margin-left: 30px;
+  font-size: 2em;
+}
+
+header.mainheader a.sign_in {
+  position: absolute;
+  top: 115px;
+  right: 6%;
+  font-size: 2.2em;
+  text-decoration: underline;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+a.sign_in,
+nav ul li a {
+  text-decoration: none;
+  color: #888;
+}
+
+a.sign_in:hover,
+nav ul li a:hover {
+  color: #000;
+}
+
+nav ul li a span {
+  color: #000;
+}
+
+/* Slide bar */
+
+#slide {
+  display: block;
+  width: 92%;
+  padding-top: 43%;
+  background: url(images/Slide1.jpg) no-repeat 50%;
+  background-size: 100%;
+  border-radius: 20px;
+  margin: 0 auto 4% auto;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Gneral section's header setting */
+
+section header {
+  border-bottom: #666 solid 1px;
+  margin: 0 4%;
+  overflow: hidden;
+}
+
+section header p:nth-child(1) {
+  float: left;
+  font-size: 3em;
+  color: #666;
+}
+
+section header p:nth-child(2) {
+  font-size: 1.5em;
+  float: right;
+  margin-top: 15px;
+}
+
+section header p a {
+  color: #666;
+}
+
+section header p a:hover {
+  color: #000;
+}
+
+/* Store */
+
+section.store {
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+
+div.cds {
+  width: 19%;
+  margin: 2% 3% 0 3%;
+  float: left;
+  overflow: hidden;
+}
+
+div.cds img.CDimg {
+  width: 95%;
+  filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.2));
+}
+
+div.play_store a {
+  display: inline-block;
+  width: 40%;
+  padding-top: 42%;
+  margin: 6% 0 0 0;
+}
+
+div.play_store a:nth-child(1) {
+  background: url(images/play_button.svg) no-repeat 50%;
+  background-size: 100%;
+}
+
+div.play_store a:nth-child(2) {
+  background: url(images/store_button.svg) no-repeat 50%;
+  background-size: 100%;
+  margin-left: 15%;
+}
+
+div.cdp p {
+  font-size: 1.8em;
+  width: 100%;
+  margin: 4% 0 0 0;
+  padding-left: 6px;
+}
+
+div.cdp p span.bold {
+  font-weight: bold;
+}
+
+div.cdp p span.italic {
+  display: inline-block;
+  font-family: cursive;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Upcoming shows */
+
+div.shows {
+  width: 92%;
+  margin: 0 auto 4% auto;
+  font-size: 2em;
+}
+
+div.shows p {
+  display: inline-block;
+  width: 49%;
+  margin-top: 2%;
+  margin-left: 0.5%;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+div.shows p span {
+    font-family: 'Bree Serif', serif;
+}
+
+/* About us */
+
+section.about_us div {
+  width: 92%;
+  margin: 0 auto 20px auto;
+}
+
+section.about_us div h1 {
+  font-size: 3em;
+  margin-top: 20px;
+}
+
+section.about_us div p {
+  padding: 4px;
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+section.about_us div p.main_paragraph {
+   font-weight: bold;
+}
+
+iframe {
+  float: right;
+  width: 44%;
+  height: 250px;
+  margin: 30px 0 30px 20px;
+}
+
+/* Footer */
+
+footer {
+  font-size: 1.2em;
+  color: #888;
+  height: 143px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+footer p {
+  display: inline-block;
+  padding-top: 55px;
+}
+
+footer p a {
+  color: #67a7ef;
+}
+
+footer div {
+  display: block;
+  width: 20%;
+  float: right;
+  margin-top: 50px;
+}
+
+footer div a {
+  display: inline-block;
+  width: 35px;
+  padding-top: 25px;
+}
+
+footer div a:nth-child(1) {
+  background: url(images/email.svg) no-repeat 50%;
+  background-size: 100%;
+}
+
+footer div a:nth-child(2) {
+  background: url(images/youtube.svg) no-repeat 50%;
+  background-size: 100%;
+}
+
+footer div a:nth-child(3) {
+  background: url(images/twitter.svg) no-repeat 50%;
+  background-size: 100%;
+}
+
+footer div a:nth-child(4) {
+  background: url(images/facebook.svg) no-repeat 50%;
+  background-size: 130%;
+  width: 25px;
+}
+
+/* Max width 760px */
+
+@media screen and (max-width: 760px) {
+
+  /* Header */
+
+  header.mainheader {
+    margin-bottom: 40px;
+  }
+
+  a.logo_link {
+    float: none;
+    height: 33px;
+    width: 112px;
+    margin-top: 38px;
+  }
+
+  nav {
+    float: none;
+    width: 68em;
+    margin: 60px auto;
+    font-size: 0.8em;
+  }
+
+  header.mainheader a.sign_in {
+    top: 0px;
+    font-size: 3em;
+  }
+
+  /* Store */
+
+  div.cds {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  div.cds:nth-child(4) {
+    display: none;
+  }
+
+  div.cds img.CDimg {
+    display: block;
+    float: left;
+    width: 30%;
+  }
+
+  div.cdp {
+    display: block;
+    float: left;
+    width: 60%;
+  }
+
+  div.cdp div.play_store {
+    display: block;
+    float: left;
+    width: 25%;
+    margin-left: 5%;
+  }
+
+  div.play_store a {
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  div.play_store a:nth-child(1) {
+    margin-top: 0;
+  }
+
+  div.play_store a:nth-child(2) {
+    margin-left: 0;
+    margin-top: 2%;
+    padding-bottom: 6%;
+  }
+
+  div.cdp p {
+    display: inline-block;
+    font-size: 2.5em;
+    width: 65%;
+    margin: 2% 0 0 2%;
+  }
+
+  div.cdp p span.bold {
+    font-weight: bold;
+  }
+
+  div.cdp p span.italic {
+    display: inline-block;
+    font-family: cursive;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  /* Upcoming Shows */
+
+  div.shows p {
+    width: 95%;
+    margin-top: 3%;
+    font-family: 'Maven Pro', sans-serif;
+  }
+
+  /* Aabout Us */
+
+  section.about_us div h1 {
+    font-size: 2em;
+    margin-top: 12px;
+    color: #333;
+    padding-left: 1%;
+  }
+
+  section.about_us div p {
+    padding: 3px;
+    font-size: 1.3em;
+  }
+
+  section.about_us div p.main_paragraph {
+     font-weight: bold;
+  }
+
+  iframe {
+    float: right;
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+  }
+
+  /* Footer */
+
+  footer p {
+    display: block;
+    width: 37em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+
+  footer p span {
+    display: none;
+  }
+
+  footer div {
+    float: none;
+    width: 139px;
+    margin: auto;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.cdp p {
+    font-size: 2em;
+  }
+  iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  header.mainheader nav {
+    width: 80em;
+    font-size: 0.6em;
+
+  }
+
+  div.cdp p {
+    font-size: 1.4em;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  nav ul li {
+    margin-left: 15px;
+  }
+
+  footer p {
+    width: 17rem
+  }
+}

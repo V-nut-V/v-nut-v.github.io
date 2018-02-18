@@ -1,0 +1,37 @@
+main .wrapper {
+  display: block; }
+  @media screen and (max-width: 800px) {
+    main .wrapper {
+      max-width: 100%; } }
+  main .wrapper .videobox {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: #666 dotted 2px; }
+    main .wrapper .videobox h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #eee;
+      line-height: 4rem;
+      text-align: center; }
+      @media screen and (max-width: 800px) {
+        main .wrapper .videobox h1 {
+          font-size: 2rem;
+          line-height: 2.2rem;
+          margin: 0 6px; } }
+    main .wrapper .videobox .videobk {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      main .wrapper .videobox .videobk iframe {
+        width: 800px;
+        height: 450px;
+        margin-top: 2rem; }
+        @media screen and (max-width: 800px) {
+          main .wrapper .videobox .videobk iframe {
+            width: 600px;
+            height: 300px; } }
