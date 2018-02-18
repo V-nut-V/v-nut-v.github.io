@@ -166,21 +166,21 @@ main
   display: none
 .detail
   display: block
-  position: absolute
+  position: fixed
   top: 0
   width: 100vw
-  // height: 100vh
-  // background-color: rgba(0,0,0,.8)
+  height: 100vh
+  background-color: rgba(0,0,0,.8)
   animation:
     name: appear
     duration: 300ms
     timing-function: ease-in-out
     fill-mode: forwards
   .wrapper
-    max-width: 1100px
+    max-width: 650px
     margin: 0 auto
     padding: 0 2rem
-    margin-top: 10vh
+    margin-top: 2vh
     // for mobile size
     @include logoAdjust
       margin-top: 0

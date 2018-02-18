@@ -850,9 +850,11 @@ main {
 
 .detail {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   -webkit-animation-name: appear;
           animation-name: appear;
   -webkit-animation-duration: 300ms;
@@ -862,10 +864,10 @@ main {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
   .detail .wrapper {
-    max-width: 1100px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 0 2rem;
-    margin-top: 10vh; }
+    margin-top: 2vh; }
     @media screen and (max-width: 600px) {
       .detail .wrapper {
         margin-top: 0;
