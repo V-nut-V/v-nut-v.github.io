@@ -1147,109 +1147,87 @@ header {
       background-size: cover;
       padding-top: 100%; }
 
-section.icon .wrapper {
-  width: 1000px;
-  max-width: 90%;
-  margin: 0 auto; }
-  section.icon .wrapper h1 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: center;
-    line-height: 7rem;
-    color: #777;
-    height: 7rem; }
-    section.icon .wrapper h1 a {
+section.icon {
+  background-color: #eee;
+  padding-bottom: 50px; }
+  section.icon .wrapper {
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto; }
+    section.icon .wrapper h1 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: 7rem;
       color: #777;
-      text-decoration: none; }
-    section.icon .wrapper h1 a:hover {
-      color: #222; }
-  section.icon .wrapper .iconPics {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    section.icon .wrapper .iconPics > div {
-      position: relative;
-      width: 25%;
-      padding-bottom: 25%;
-      margin: 10px;
-      margin-bottom: 8%;
-      border-radius: 50%; }
-      section.icon .wrapper .iconPics > div:nth-child(1) {
-        background: url("../images/icon1.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(2) {
-        background: url("../images/icon2.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(3) {
-        background: url("../images/icon3.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(4) {
-        background: url("../images/icon4.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(5) {
-        background: url("../images/icon5.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(6) {
-        background: url("../images/icon6.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(7) {
-        background: url("../images/icon7.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(8) {
-        background: url("../images/icon8.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div:nth-child(9) {
-        background: url("../images/icon9.png") no-repeat center;
-        background-size: cover; }
-      section.icon .wrapper .iconPics > div > div {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background-color: rgba(225, 225, 225, 0.75);
-        border-radius: 50%;
-        color: #474747;
-        -webkit-transform: scale(0);
-                transform: scale(0);
-        opacity: 0;
-        -webkit-transition: all 300ms ease-out;
-        transition: all 300ms ease-out; }
-    section.icon .wrapper .iconPics > div:hover > div {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1; }
-      section.icon .wrapper .iconPics > div:hover > div h3 {
-        font-size: 3rem;
-        padding-bottom: .5rem;
-        border-bottom: #474747 solid 1px; }
-        @media screen and (max-width: 800px) {
-          section.icon .wrapper .iconPics > div:hover > div h3 {
-            font-size: 1.4rem;
-            padding-bottom: .3rem; } }
-      section.icon .wrapper .iconPics > div:hover > div p {
-        font-size: 1.5rem;
-        padding-top: 5px; }
-        @media screen and (max-width: 800px) {
-          section.icon .wrapper .iconPics > div:hover > div p {
-            font-size: 1rem; } }
+      height: 7rem; }
+      section.icon .wrapper h1 a {
+        color: #777;
+        text-decoration: none; }
+      section.icon .wrapper h1 a:hover {
+        color: #222; }
+    section.icon .wrapper .iconPics {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      section.icon .wrapper .iconPics > div {
+        position: relative;
+        width: 25%;
+        margin: 10px;
+        margin-bottom: 30px;
+        border-radius: 50%; }
+        section.icon .wrapper .iconPics > div img {
+          width: 100%; }
+        section.icon .wrapper .iconPics > div > div {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          background-color: rgba(0, 0, 0, 0.75);
+          border-radius: 50%;
+          color: #e3e3e3;
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          opacity: 0;
+          -webkit-transition: all 300ms ease-out;
+          transition: all 300ms ease-out; }
+      section.icon .wrapper .iconPics > div:hover > div {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1; }
+        section.icon .wrapper .iconPics > div:hover > div h3 {
+          font-size: 3rem;
+          padding-bottom: .5rem;
+          border-bottom: #e3e3e3 solid 2px; }
+          @media screen and (max-width: 800px) {
+            section.icon .wrapper .iconPics > div:hover > div h3 {
+              font-size: 1.4rem;
+              padding-bottom: .3rem; } }
+        section.icon .wrapper .iconPics > div:hover > div p {
+          font-size: 1.5rem;
+          padding-top: 5px; }
+          @media screen and (max-width: 800px) {
+            section.icon .wrapper .iconPics > div:hover > div p {
+              font-size: 1rem; } }
 
 section.logo {
   background: url("../images/logoDesignBK.jpg") no-repeat center;
