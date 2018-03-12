@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>David Trubridge</title>
+  <link rel="stylesheet" href="master.css">
+  <script>
+    window.onload = function() {
+      // const line = document.querySelector('.line');
+      // setTimeout(() => { line.classList.add('grow'); }, 500);
+      const btn = document.querySelector('#arrow');
+      btn.addEventListener('click', function() {
+        let height = document.getElementById('header').offsetHeight;
+        window.scroll({
+          top: height,
+          left: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  </script>
+</head>
+<body>
+
+  <header id="header">
+    <div class="mask"></div>
+    <div class="wrapperh">
+      <div class="content">
+        <h1><a href="">David Trubridge</a></h1>
+        <!-- <div class="line"></div> -->
+        <h2>Lighting & Furniture Designer ● NZ Artisan</h2>
+        <div class="arrow" id="arrow"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="lighting">
+    <div class="wrapper">
+
+      <h1>Lighting</h1>
+
+      <div class="content">
+        <div class="part">
+          <img src="./images/homepage/Rise.jpg" alt="Rise light">
+          <h4>Rise</h4>
+          <p>Designed to hide the glare of a lamp, the alternating panels create a subtle lighting effect.</p>
+        </div>
+
+        <div class="part">
+          <img src="./images/homepage/Navicula-Grid.jpg" alt="grid light">
+          <h4>Navicula-Grid</h4>
+          <p>Navicula is derived from nature, in this case from one of the many microscopic diatoms that float around in the oceans.</p>
+        </div>
+
+        <div class="part">
+          <img src="./images/homepage/Bounce.jpg" alt="Bounce light">
+          <h4>Bounce</h4>
+          <p>Designed to hide the glare of a lamp, the alternating panels create a subtle lighting effect.</p>
+        </div>
+      </div>
+
+      <div class="button">
+        <a href="">collection</a>
+        <div class="arrow"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="jewellery">
+    <div class="wrapper">
+
+      <h1>Jewellery</h1>
+
+      <div class="content">
+        <div class="part">
+          <img src="./images/homepage/Wing-Brooch.jpg" alt="Wing-Brooch jewellery">
+          <h4>Wing-Brooch</h4>
+          <p>Most similar to our Wing lights hanging orientation.</p>
+        </div>
+
+        <div class="part">
+          <img src="./images/homepage/Wing-Pendant.jpg" alt="Wing-Pendant jewellery">
+          <h4>Wing-Pendant</h4>
+          <p>A single feather like pendant.</p>
+        </div>
+
+        <div class="part">
+          <img src="./images/homepage/Flax-Brooch.jpg" alt="Flax-Brooch jewellery">
+          <h4>Flax-Brooch</h4>
+          <p>A round disc like pendant with a lovely snake chain.</p>
+        </div>
+      </div>
+
+      <div class="button">
+        <a href="">collection</a>
+        <div class="arrow"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="others">
+    <div class="wrapper">
+
+      <img src="./images/homepage/others.jpg" alt="others">
+
+      <div class="content">
+        <h1>Others</h1>
+        <h4>Furniture</h4>
+        <h4>Misc</h4>
+        <h4>Commisions</h4>
+        <div class="button">
+          <a href="">collection</a>
+          <div class="arrow"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="wrapper">
+      <h1>David Trubridge</h1>
+      <ul>
+        <li><a href="">about</a></li>
+        <li><a href="">lighting</a></li>
+        <li><a href="">jewellery</a></li>
+        <li><a href="">others</a></li>
+      </ul>
+
+    </div>
+  </footer>
+
+
+</body>
+</html>
