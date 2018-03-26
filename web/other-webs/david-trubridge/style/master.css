@@ -42,7 +42,7 @@ body {
 
 /* header section */
 header {
-  background: #000 url(./images/homepage/header.jpg) center;
+  background: #000 url(.././images/homepage/header.jpg) center;
   background-size: cover;
   color: #bda366;
   height: 100vh;
