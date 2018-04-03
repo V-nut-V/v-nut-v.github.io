@@ -102,7 +102,8 @@ header .wrapperh .content h1 a {
 header .wrapperh .content h2 {
   font-weight: 100;
   letter-spacing: 3px;
-  font-variant: small-caps;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 header .wrapperh .content .arrow {
@@ -138,12 +139,12 @@ section .wrapper h1 {
 }
 
 section .wrapper .content {
-  border-radius: 1rem;
+  border-radius: 4px;
   display: flex;
   padding: 0 2rem;
   padding-bottom: 3rem;
   max-width: 90rem;
-  box-shadow: 5px 10px 30px 10px rgba(0,0,0,.2);
+  box-shadow: 4px 4px 1px rgba(0,0,0,.2);
 }
 
 section .wrapper .content .part {
@@ -169,8 +170,8 @@ section .wrapper a {
   background-color: #000;
   padding: 1rem 3rem;
   margin: 5rem 0;
-  border-radius: 5px;
-  box-shadow: 2px 4px 6px 3px rgba(0,0,0,.2);
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.4);
   transition: transform .3s cubic-bezier(0.18, 0.19, 0.48, 1.53);
   letter-spacing: 1px;
 }
@@ -225,8 +226,8 @@ section .wrapper a:hover {
 }
 
 .others .wrapper .content .part img {
-  border-radius: 1rem;;
-  box-shadow: 2px 4px 6px 3px rgba(0,0,0,.2);
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
 }
 
 .others .wrapper .content .part h4 {

@@ -41,8 +41,8 @@ nav ul {
   width: 90rem;
   max-width: 90%;
   background-color: #222;
-  border-radius: 6px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,.4);
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.4);
   padding: 0 10rem;
 }
 
@@ -50,10 +50,10 @@ nav ul li a {
   margin: 0 .7rem;
   color: #ccc;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 100;
   font-family: 'Playfair';
-  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  text-shadow: 2px 2px 1px rgba(0,0,0,.6);
   letter-spacing: 1px;
 }
 
@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 nav ul li a.hl {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: line-through;
 }
 
 /* content||main section */
@@ -80,8 +80,8 @@ main .part {
   padding: 0 3rem;
   margin-bottom: 5px;
   max-width: 85%;
-  border-radius: 5px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,.2);
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
 main .part:nth-child(odd) {
@@ -113,26 +113,26 @@ main .part article p {
 }
 
 /* about page content's style setting */
-section.info {
-
-}
-
 section.info div.wrapper {
   width: 90rem;
   max-width: 90%;
+  height: 80vh;
+  min-height: 420px;
+  max-height: 660px;
   margin: 0 auto;
   padding: 3rem;
   background: #ede4d3 url('../images/about/H1.jpg') no-repeat right;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 4px 4px 10px rgba(0,0,0,.2);
 }
 
 section.info div.wrapper article {
+  position: relative;
   max-width: 50rem;
   background-color: rgba(225,225,225,.6);
   padding: 3rem;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 section.info div.wrapper article h1 {
@@ -152,26 +152,34 @@ section.info div.wrapper article p:nth-child(2) {
 
 section.info div.wrapper a {
   position: relative;
-  top: -8px;
-  left: -100px;
+  top: -0.8rem;
+  left: -6rem;
   padding: 1.5rem 4rem;;
   box-sizing: content-box;
-  width: 90rem;
+  width: 30rem;
   max-width: 90%;
   margin: 0 auto;
   background-color: #222;
   color: #eee;
   text-decoration: none;
   font-size: 2.3rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: 'Playfair';
-  border-radius: 8px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,.3);
+  text-transform: capitalize;
+  border-radius: 2px;
+  box-shadow: 4px 4px 3px rgba(0,0,0,.3);
   text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+  transition: all .33s cubic-bezier(0.2, 0.82, 0.62, 1.63);
+}
+
+section.info div.wrapper a:hover {
+  position: relative;
+  top: -1.6rem;
+  color: #fff;
 }
 
 section.contact div.wrapper {
-  padding-top: 5rem;
+  padding-top: 4rem;
   display: flex;
   justify-content: space-between;
   width: 90rem;
@@ -188,6 +196,11 @@ section.contact div.wrapper div.parts {
   line-height: 1.6rem;
   letter-spacing: 1px;
   box-shadow: 4px 4px 10px rgba(0,0,0,.1);
-  border-radius: 5px;
+  border-radius: 2px;
   overflow: hidden;
+  transition: transform .2s cubic-bezier(0.2, 0.82, 0.62, 1.63);
+}
+
+section.contact div.wrapper div.parts:hover {
+  transform: scale(1.1);
 }
