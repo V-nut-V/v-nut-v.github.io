@@ -9,14 +9,16 @@
   <script>
     window.onload = function() {
       var btn = document.querySelector('#arrow');
-      btn.addEventListener('click', function() {
-        var height = document.getElementById('header').offsetHeight;
-        window.scroll({
-          top: height,
-          left: 0,
-          behavior: 'smooth'
+      if(btn != null) {
+        btn.addEventListener('click', function() {
+          const headerHeight = document.getElementById('header').clientHeight;
+          window.scroll({
+            top: headerHeight,
+            left: 0,
+            behavior: 'smooth'
+          });
         });
-      });
+      }
     }
   </script>
 </head>

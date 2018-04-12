@@ -165,7 +165,9 @@ main
 .detailTage
   display: none
 .detail
-  display: block
+  display: flex
+  align-items: center
+  justify-content: center
   position: fixed
   top: 0
   width: 100vw
@@ -176,49 +178,36 @@ main
     duration: 300ms
     timing-function: ease-in-out
     fill-mode: forwards
-  .wrapper
-    max-width: 650px
-    margin: 0 auto
-    padding: 0 2rem
-    margin-top: 2vh
-    // for mobile size
-    @include logoAdjust
-      margin-top: 0
-      padding: 0
-    header
-      display: flex
-      justify-content: space-between
-      background-color: #000
-      h1
-        line-height: 40px
-        letter-spacing: 2px
-        margin-left: 2rem
-        font-size: 2.5rem
-        color: #ddd
-        text-transform: capitalize
-      .closeTage
-        width: 40px
-        height: 40px
-        background-color: #777
-        float: right
-        display: flex
-        flex-direction: column
-        justify-content: space-around
-        align-items: center
-        cursor: pointer
-        &:hover
-          background-color: #222
-        .top
-          transform: translateY(10px) rotate(-45deg)
-        .bottom
-          transform: translateY(-10px) rotate(45deg)
-        div
-          width: 30px
-          height: 5px
-          background-color: #fff
-    picture
-      img
-        width: 100%
+  .closeTage
+    position: absolute
+    top: 50px
+    right: 50px
+    width: 40px
+    height: 40px
+    background-color: rgba(255,255,255,.6)
+    border-radius: 50%
+    float: right
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    cursor: pointer
+    @include small
+      top: 5px
+      right: 5px
+    &:hover
+      background-color: rgba(255,255,255,.5)
+    .top
+      transform: translateY(10px) rotate(-45deg)
+    .bottom
+      transform: translateY(-10px) rotate(45deg)
+    div
+      width: 23px
+      height: 3px
+      background-color: #111
+  img
+    max-width: 100vw
+    max-height: 100vh
 
 sub
   display: none
