@@ -32,7 +32,7 @@ gulp.task('scriptsRefresh',['scripts'], function() {
   browserSync.reload();
 });
 
-gulp.task('watch', function() {
+gulp.task('default', function() {
 
   browserSync.init({
     notify: false,
