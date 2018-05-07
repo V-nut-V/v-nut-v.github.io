@@ -52,4 +52,5 @@ gulp.task('default', function() {
   watch('./web/scripts/source/**/*.js', function() {
     gulp.start('scriptsRefresh');
   });
+  
 });

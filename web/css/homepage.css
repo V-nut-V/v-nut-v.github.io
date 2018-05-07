@@ -1344,6 +1344,8 @@ section.web {
           line-height: 1.8rem;
           padding-bottom: 5rem;
           padding-top: 2rem; }
+          section.web .wrapper main section p a {
+            color: white; }
           @media screen and (max-width: 800px) {
             section.web .wrapper main section p {
               padding-left: 3rem;
@@ -1401,8 +1403,8 @@ footer {
           font-family: 'Roboto', sans-serif;
           color: #474747;
           text-decoration: none;
-          font-size: 1.5rem;
-          line-height: 2.7rem;
+          font-size: 1.3rem;
+          line-height: 2.3rem;
           letter-spacing: 1px; }
           footer .wrapper .links1 ul li a:hover {
             text-decoration: underline; }
