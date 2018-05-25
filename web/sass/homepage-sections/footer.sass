@@ -52,16 +52,16 @@ footer
 
         a
           display: block
-          width: 3rem
-          height: 3rem
-          margin-left: 2rem
+          width: 2.5rem
+          height: 2.5rem
+          margin-left: 1rem
           background-color: lightgreen
           background-size: cover
           &:hover
             opacity: .7
             cursor: pointer
           @include small
-            margin: 0 1rem
+            margin: 0 .6rem
           &:nth-child(1)
             background: url("../images/linSign-f.svg") no-repeat center
             width: 6rem
@@ -69,6 +69,8 @@ footer
             background: url("../images/faceBook-f.svg") no-repeat center
           &:nth-child(3)
             background: url("../images/weChat-f.svg") no-repeat center
+          &:nth-child(4)
+            background: url("../images/instagram-f.svg") no-repeat center
       h3
         text-align: right
         font-size: 1.6rem
@@ -76,3 +78,5 @@ footer
         font-weight: 400
         color: $menuGray
         letter-spacing: 1px
+        @include small
+          text-align: center

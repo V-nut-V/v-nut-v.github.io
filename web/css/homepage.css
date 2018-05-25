@@ -958,12 +958,14 @@ header {
         -webkit-transition: opacity .3s ease-out;
         transition: opacity .3s ease-out; }
         header .header .info a:hover {
-          opacity: .7; }
+          opacity: .7;
+          cursor: pointer; }
         header .header .info a.fb {
           background-image: url("../images/faceBook.svg"); }
         header .header .info a.wc {
-          background-image: url("../images/weChat.svg");
-          cursor: pointer; }
+          background-image: url("../images/weChat.svg"); }
+        header .header .info a.ig {
+          background-image: url("../images/instagram.svg"); }
     header .header h3 {
       font-weight: 100;
       padding-top: 16rem;
@@ -1072,6 +1074,8 @@ header {
       font-family: 'Roboto';
       font-weight: 400;
       letter-spacing: .13rem; }
+      .intro .wrapper p span.crossed_line {
+        text-decoration: line-through; }
       .intro .wrapper p a {
         color: #eee; }
         .intro .wrapper p a:hover {
@@ -1079,7 +1083,7 @@ header {
       @media screen and (max-width: 800px) {
         .intro .wrapper p {
           font-size: 1.3rem; } }
-      .intro .wrapper p span {
+      .intro .wrapper p span.sub_title {
         font-weight: 700;
         letter-spacing: 1px; }
 
@@ -1436,9 +1440,9 @@ footer {
                     transform: scale(0.9); } }
         footer .wrapper .links2 .sign a {
           display: block;
-          width: 3rem;
-          height: 3rem;
-          margin-left: 2rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-left: 1rem;
           background-color: lightgreen;
           background-size: cover; }
           footer .wrapper .links2 .sign a:hover {
@@ -1446,7 +1450,7 @@ footer {
             cursor: pointer; }
           @media screen and (max-width: 800px) {
             footer .wrapper .links2 .sign a {
-              margin: 0 1rem; } }
+              margin: 0 .6rem; } }
           footer .wrapper .links2 .sign a:nth-child(1) {
             background: url("../images/linSign-f.svg") no-repeat center;
             width: 6rem; }
@@ -1454,6 +1458,8 @@ footer {
             background: url("../images/faceBook-f.svg") no-repeat center; }
           footer .wrapper .links2 .sign a:nth-child(3) {
             background: url("../images/weChat-f.svg") no-repeat center; }
+          footer .wrapper .links2 .sign a:nth-child(4) {
+            background: url("../images/instagram-f.svg") no-repeat center; }
       footer .wrapper .links2 h3 {
         text-align: right;
         font-size: 1.6rem;
@@ -1461,3 +1467,6 @@ footer {
         font-weight: 400;
         color: #777;
         letter-spacing: 1px; }
+        @media screen and (max-width: 800px) {
+          footer .wrapper .links2 h3 {
+            text-align: center; } }

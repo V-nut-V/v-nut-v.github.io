@@ -69,12 +69,15 @@ header
 
         &:hover
           opacity: .7
+          cursor: pointer
 
         &.fb
           background-image: url("../images/faceBook.svg")
         &.wc
           background-image: url("../images/weChat.svg")
-          cursor: pointer
+        &.ig
+          background-image: url("../images/instagram.svg")
+
     h3
       font-weight: 100
       padding-top: 16rem
@@ -175,13 +178,15 @@ header
       font-family: 'Roboto'
       font-weight: 400
       letter-spacing: .13rem
+      span.crossed_line
+        text-decoration: line-through
       a
         color: #eee
         &:hover
           color: #fff
       @include small
         font-size: 1.3rem
-      span
+      span.sub_title
         font-weight: 700
         letter-spacing: 1px
 .weChatTage
