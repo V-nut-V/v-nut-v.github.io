@@ -820,7 +820,7 @@ main {
     main .wrapper .box {
       border: #fff solid 1px;
       width: 250px;
-      margin: 4rem 1rem 1rem 1rem;
+      margin: 4rem auto 1rem auto;
       border-radius: 1rem;
       background-color: rgba(0, 0, 0, 0.3); }
       main .wrapper .box h1 {
