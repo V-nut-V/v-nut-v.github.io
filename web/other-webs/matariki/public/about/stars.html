@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stars</title>
+  <link rel="stylesheet" href="../css/subpage-stars.css">
+</head>
+<body>
+  <div class="outwrapper">
+    <nav>
+      <div class="wrapper">
+        <img src="../images/logo-white.png" alt="matarik-logo" class="logo">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./data.html">Data</a></li>
+          <li><a href="./sound.html">Sound</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="stars" id="particles-js">
+      <div class="wrapper-stars">
+        <div class="uru-a-rangi"><h4>Uru-ā-rangi</h4></div>
+        <div class="waipuna-a-rangi"><h4>Waipuna-ā-rangi</h4></div>
+        <div class="waita"><h4>Waitā</h4></div>
+        <div class="waiti"><h4>Waitī</h4></div>
+        <div class="matariki"><h4>Matariki</h4></div>
+        <div class="tupu-a-rangi"><h4>Tupu-ā-rangi</h4></div>
+        <div class="tupu-a-nuku"><h4>Tupu-ā-nuku</h4></div>
+      </div>
+    </div>
+
+    <div class="detail D-uru-a-rangi">
+      <h1>Uru-ā-rangi</h1>
+      <p><span>Realm / description: </span>Connected to the wind/ emphasis on weather</p>
+      <p><span>Data types: </span>Air temperature / Pressure / Wind speed / Wind direction</p>
+    </div>
+
+    <div class="detail D-waipuna-a-rangi">
+      <h1>Waipuna-ā-rangi</h1>
+      <p><span>Realm / description: </span>'Water that pools in the sky' (Rain, mist, fog, steam, humidity etc)</p>
+      <p><span>Data types: </span>Humidity / Rainfall / Temperature / Acoustic rain gauge (measures droplet size)</p>
+    </div>
+
+    <div class="detail D-waita">
+      <h1>Waitā</h1>
+      <p><span>Realm / description: </span>Salt water/ emphasis on sea and kai</p>
+      <p><span>Data types: </span>Solunar activity (fish activity) / Significant wave height / Tide height (1st, 2nd, 3rd, 4th tides) / Water temperature rain gauge (measures droplet size)</p>
+    </div>
+
+    <div class="detail D-waiti">
+      <h1>Waitī</h1>
+      <p><span>Realm / description: </span>Connected to fresh water/ emphasis on river & kai</p>
+      <p><span>Data types: </span>River level in meters / River flow in (m3/sec) / Water temperature / Water temperature / River lifeforms - number/ frequency</p>
+    </div>
+
+    <div class="detail D-matariki">
+      <h1>Matariki</h1>
+      <p><span>Realm / description: </span>That which has passed, aspirations for the future</p>
+      <p><span>Data types: </span>Number of people in vicinity with mobile phones / Number of received / sent signals inside polling period / Number of people and direction of movement in immediate waka areas / Volume, pitch, rhythm of voices / Solar radiation</p>
+    </div>
+
+    <div class="detail D-tupu-a-rangi">
+      <h1>Tupu-ā-rangi</h1>
+      <p><span>Realm / description: </span>'Tree tops'. Emphasis on kai</p>
+      <p><span>Data types: </span>Birdsong (presence, volume, pitch, rythym, number of birds) / Bird movements / Growth and movement of tree branches / Growth and movement of berries</p>
+    </div>
+
+    <div class="detail D-tupu-a-nuku">
+      <h1>Tupu-ā-nuku</h1>
+      <p><span>Realm / description: </span>Underground activity. Emphasis on kai</p>
+      <p><span>Data types: </span>Seismic activity: Frequency within 50km Hamilton, time, depth, magnitude / Temperature / Ground moisture / Root vibrations</p>
+    </div>
+
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script>
+  $(".uru-a-rangi").hover(
+    function() {
+    $(".D-uru-a-rangi").addClass("display");
+  }, function() {
+    $(".D-uru-a-rangi").removeClass("display");
+  });
+
+  $(".waipuna-a-rangi").hover(
+    function() {
+    $(".D-waipuna-a-rangi").addClass("display");
+  }, function() {
+    $(".D-waipuna-a-rangi").removeClass("display");
+  });
+
+  $(".waita").hover(
+    function() {
+    $(".D-waita").addClass("display");
+  }, function() {
+    $(".D-waita").removeClass("display");
+  });
+
+  $(".waiti").hover(
+    function() {
+    $(".D-waiti").addClass("display");
+  }, function() {
+    $(".D-waiti").removeClass("display");
+  });
+
+  $(".matariki").hover(
+    function() {
+    $(".D-matariki").addClass("display");
+  }, function() {
+    $(".D-matariki").removeClass("display");
+  });
+
+  $(".tupu-a-rangi").hover(
+    function() {
+    $(".D-tupu-a-rangi").addClass("display");
+  }, function() {
+    $(".D-tupu-a-rangi").removeClass("display");
+  });
+
+  $(".tupu-a-nuku").hover(
+    function() {
+    $(".D-tupu-a-nuku").addClass("display");
+  }, function() {
+    $(".D-tupu-a-nuku").removeClass("display");
+  });
+  </script>
+  <script src="../js/particles.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

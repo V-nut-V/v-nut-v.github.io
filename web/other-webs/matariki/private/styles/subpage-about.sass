@@ -1,0 +1,84 @@
+@import "normalize"
+@import "base/global"
+@import "base/fonts"
+@import "base/mixins"
+@import "base/vars"
+@import "base/animation"
+
+// subpage stylesheet
+.outwrapper
+  position: relative
+  background-size: cover
+  height: 100vh
+
+nav
+  background-color: #3c3c3c
+  height: 5rem
+  box-shadow: 0 8px 38px rgba(0,0,0,.3)
+
+  .wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    overflow: hidden
+
+    .logo
+      height: 2rem
+
+    ul
+      display: flex
+      li
+        margin-right: 2rem
+        a
+          color: white
+          text-decoration: none
+          font-size: 1.4rem
+          font-weight: 300
+          letter-spacing: 1px
+          &:hover
+            text-decoration: underline
+
+
+
+.about
+  padding: 8rem 0
+  .wrapper
+    width: 60rem
+    background-color: rgba(0,0,0,.5)
+    padding: 5rem
+    border-radius: 1rem
+    h1
+      font-size: 3rem
+      text-align: center
+      font-weight: 400
+      margin-bottom: 3rem
+    p
+      font-weight: 100
+      font-size: 1.4rem
+      line-height: 2.4rem
+      margin-top: 2rem
+      letter-spacing: .5px
+a.back
+  position: fixed
+  bottom: 5rem
+  right: 5rem
+  border-radius: 5px
+  box-shadow: 0 0 10px rgba(0,0,0,.5)
+  color: white
+  text-decoration: none
+  font-size: 1.4rem
+  background-color: black
+  margin-top: 5rem
+  padding: 2rem
+  text-align: center
+  transition: transform .3s cubic-bezier(0.37, 0.64, 0.47, 1.62)
+  &:hover
+    transform: scale(1.2)
+
+
+
+canvas
+  position: fixed
+  top: 0
+  background: radial-gradient(#444, #222)
+  z-index: -1

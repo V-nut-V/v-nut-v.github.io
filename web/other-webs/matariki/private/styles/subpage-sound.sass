@@ -1,0 +1,114 @@
+@import "normalize"
+@import "base/global"
+@import "base/fonts"
+@import "base/mixins"
+@import "base/vars"
+@import "base/animation"
+
+// subpage stylesheet
+.outwrapper
+  position: relative
+  background-size: cover
+  height: 100vh
+
+nav
+  background-color: #d2e0e6
+  height: 5rem
+  box-shadow: 0 8px 38px rgba(0,0,0,.1)
+
+  .wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    overflow: hidden
+
+    .logo
+      height: 2rem
+
+    ul
+      display: flex
+      li
+        margin-right: 2rem
+        a
+          color: black
+          text-decoration: none
+          font-size: 1.4rem
+          font-weight: 400
+          letter-spacing: 1px
+          &:hover
+            text-decoration: underline
+
+
+
+.sound
+  padding-top: 5rem
+  .audios
+    margin-top: 5rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    h1
+      font-weight: 300
+      font-size: 4rem
+      text-shadow: 0 0 20px rgba(0,0,0,.5)
+      margin-bottom: 1rem
+
+    audio
+      margin-bottom: 5rem
+  // .wrapper
+  //   display: grid
+  //   grid-template-columns: repeat(auto-fit, 20rem)
+  //   justify-content: center
+    // div
+    //   width: 15rem
+    //   height: 15rem
+    //   border-radius: 50%
+    //   background-color: #fff
+    //   margin: 0
+    //   margin-top: 5rem
+    //   margin-left: auto
+    //   margin-right: auto
+    //   transition: all .4s ease-in-out
+    //   display: flex
+    //   align-items: center
+    //   justify-content: center
+    //   background-size: cover
+    //   h4
+    //     font-size: 1.6rem
+    //     font-weight: 200
+    //     letter-spacing: 1px
+    //     padding-top: .5rem
+    //     text-shadow: 0 1px 10px black
+    //   &:hover
+    //     cursor: pointer
+    //     transform: scale(1.2)
+    //     box-shadow: 0 4px 15px rgba(0,0,0,.3)
+    //   &.sound-1
+    //     background-image: url("../images/sound/02.jpg")
+    //   &.sound-2
+    //     background-image: url("../images/sound/05.jpg")
+    //   &.sound-3
+    //     background-image: url("../images/sound/04.jpg")
+    //   &.sound-4
+    //     background-image: url("../images/sound/10.jpg")
+    //   &.sound-5
+    //     background-image: url("../images/sound/11.jpg")
+
+.play::after
+  content: ""
+  height: 15rem
+  width: 15rem
+  background-color: #fff
+  position: absolute
+  z-index: -2
+  border-radius: 50%
+  animation: stars 1s ease-in-out infinite
+
+
+
+
+canvas
+  position: fixed
+  top: 0
+  background: radial-gradient(#d2e0e6, #a8c9d8)
+  z-index: -3
